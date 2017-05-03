@@ -37,31 +37,6 @@ $(document).scroll(function(){
 	});
 });
 
-new Formatter(document.getElementById('phone-input'), {
-	'pattern': '({{999}}) {{999}} - {{9999}}',
-	'persistent': false
-});
-function leaveInput(el) {
-		if (el.value.length > 0) {
-				if (!el.classList.contains('active')) {
-						el.classList.add('active');
-				}
-		} else {
-				if (el.classList.contains('active')) {
-						el.classList.remove('active');
-				}
-		}
-}
-
-var inputs = document.getElementsByClassName("number");
-for (var i = 0; i < inputs.length; i++) {
-		var el = inputs[i];
-		el.addEventListener("blur", function() {
-				leaveInput(this);
-		});
-}
-
-
 /* Map */	
 function initMap() {
 	var uluru = {lat: -25.363, lng: 131.044};
