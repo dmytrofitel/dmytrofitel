@@ -139,8 +139,7 @@ select:focus {
 	width: 100px;
 	z-index: 11;
 	opacity: 0;
-	background: rgba(39, 41, 50, 1);
-	background: rgba(255,255,255, 1);
+	background: rgba(255,255,255, .1);
 	-webkit-box-shadow: 0 0 1px 0 rgb(204, 204, 204);
 	-moz-box-shadow: 0 0 1px 0 rgb(204, 204, 204);
 	box-shadow: 0 0 1px 0 rgb(204, 204, 204);
@@ -221,7 +220,7 @@ select:focus {
 	margin: 0 auto;
 	position: relative;
 	padding: 20px 5px;
-	color: #191919;
+	color: #F1E8B8;
 }
 #main-nav .nav a:hover:before {
 	clip: rect(0, 190px, 190px, 0);
@@ -234,10 +233,10 @@ select:focus {
 	left: 0;
 	top: 20px;
 	bottom: 15px;
-	border-bottom: 2px solid #191919;
+	border-bottom: 2px solid #F1E8B8;
 	content: attr(data-content);
 	display: inline-block;
-	color: #191919;
+	color: #F1E8B8;
 	width: 100%;
 	clip: rect(0, 0, 0, 0);
 	-webkit-transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 900ms;
@@ -302,6 +301,7 @@ select:focus {
 }
 .visual .cell p {
 	margin: 0 0 30px;
+	color: #F1E8B8;
 }
 h1 {
 	font: 88px/98px 'GT-Bold', sans-serif;
