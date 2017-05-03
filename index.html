@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dmytro Fitel / Front-end developer</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery.fullpage.min.js"></script>
+	<script src="js/formatter.min.js"></script>
+	<!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif] -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5EoS_3ZUThVVuiTwSjG2QVuoKe_u1jYo&callback=initMap"></script>
+	<script src="js/scripts.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+	<header class='section' id="header">
+		<nav id="main-nav">
+			<ul class="nav">
+				<li data-menuanchor="firstPage"><a href="#firstPage" data-content="Home">Home</a></li>
+				<li data-menuanchor="secondPage"><a href="#secondPage" data-content="About">About</a></li>
+				<li data-menuanchor="3rdPage"><a href="#3rdPage" data-content="Work">Work</a></li>
+				<li data-menuanchor="4thPage"><a href="#4thPage" data-content="Contact">Contact</a></li>
+			</ul>
+			<ul class="social">
+				<li><a href="#"><img src="images/github-logo.svg" alt="image description"></a></li>
+				<li><a href="#"><img src="images/facebook-logo.svg" alt="image description"></a></li>
+				<li><a href="#"><img src="images/linkedin-logo.svg" alt="image description"></a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="fullpage" class="main">
+		<div class="visual section" id="section1">
+			<div class="cell">
+				<div class="container">
+					<div class="header-text">
+						<h1>Dmytro Fitel</h1>
+						<p class="dev">Front-end developer | Lviv, Ukraine</p>
+					</div>
+				</div>
+				<div class="click">
+					<a href=".about" class="scroll-to arrow"><img src="images/arrow-text-2.png" alt="image description"></a>
+				</div>
+			</div>
+		</div>
+		<!--/visual -->
+		<section class="content">
+			<div class="about section" id="section2">
+				<div class="container">
+					<h2>About</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint, maiores nemo, dolores deleniti eaque autem nostrum doloremque quos distinctio quis, dolor accusantium optio reprehenderit sapiente voluptatibus! Ullam, ab, non!</p>
+					<p>Molestias libero, beatae. Beatae explicabo sit accusamus veniam, ratione quo, amet quod modi magni. Est rem quod, unde minima, saepe dolore nihil.</p>
+					<p>Est rem quod, unde minima, saepe dolore nihil.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint, maiores nemo, dolores deleniti eaque autem nostrum doloremque quos distinctio quis, dolor accusantium optio reprehenderit sapiente voluptatibus! Ullam, ab, non!</p>
+				</div>
+			</div><!--/about -->
+			<div class="work section" id="section3">
+				<div class="container-large">
+					<h2>Work</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="gallery-row">
+						<div class="col col-m">
+							<figure>
+								<img src="images/img-01.jpg" alt="image description">
+								<figcaption>
+									<h3>Patrimoning Network</h3>
+									<p>HTML5/CSS3/JS/JQuery + Responsive. 1 page.</p>
+									<a href="#" class="btn">View</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col col-s">
+							<figure>
+								<img src="images/img-02.jpg" alt="image description">
+								<figcaption>
+									<h3>Wertachpark Immobilien</h3>
+									<p>HTML5/CSS3/JS/JQuery + Responsive. 8 pages.</p>
+									<a href="#" class="btn">View</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col col-s">
+							<figure>
+								<img src="images/img-03.jpg" alt="image description">
+								<figcaption>
+									<h3>Lesum Laxness</h3>
+									<p>HTML5/CSS3/Bootstrap/JQuery + Responsive. 2 pages.</p>
+									<a href="#" class="btn">View</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col col-m">
+							<figure>
+								<img src="images/img-04.jpg" alt="image description">
+								<figcaption>
+									<h3>Dental Cremer</h3>
+									<p>HTML5/CSS3/Bootstrap/JS/JQuery + Responsive. 1 page.</p>
+									<a href="#" class="btn">View</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div><!--/work -->
+			</div>
+			<div class="contact section" id="section4">
+				<div class="container">	
+					<h2>Contacts</h2>
+					<div class="row">
+						<div class="col">
+							<div class="contact-form">
+								<form>
+									<label id="label-name">Name</label>
+									<input class="form-control" type="text" name='name' id='input-name' class="name" required>
+									<label id="label-phone">Phone</label>
+									<input id="phone-input" class="number form-control" type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}">
+									<label id="label-email">E-mail</label>
+									<input class="form-control" type="email" required>
+									<label id="label-msg">Message</label>
+									<textarea class="form-control" placeholder=""></textarea>
+									<input class="btn" type="submit" value="SEND">
+								</form>
+							</div>
+						</div>
+						<div class="col">
+							<map id="map"></map>
+						</div>
+					</div>
+				</div>
+			</div><!--/contact -->
+		</div>
+	</section>
+</div>
+	<footer id="footer"></footer>
+</div>
+</body>
+</html>	
