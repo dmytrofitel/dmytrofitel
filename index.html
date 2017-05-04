@@ -17,124 +17,173 @@
 </head>
 
 <body>
-<div class="wrapper">
-	<header class='section' id="header">
-		<nav id="main-nav">
-			<ul class="nav">
-				<li data-menuanchor="firstPage"><a href="#firstPage" data-content="Home">Home</a></li>
-				<li data-menuanchor="secondPage"><a href="#secondPage" data-content="About">About</a></li>
-				<li data-menuanchor="3rdPage"><a href="#3rdPage" data-content="Work">Work</a></li>
-				<li data-menuanchor="4thPage"><a href="#4thPage" data-content="Contact">Contact</a></li>
-			</ul>
-			<ul class="social">
-				<li><a href="#"><img src="images/github-logo.svg" alt="image description"></a></li>
-				<li><a href="#"><img src="images/facebook-logo.svg" alt="image description"></a></li>
-				<li><a href="#"><img src="images/linkedin-logo.svg" alt="image description"></a></li>
-			</ul>
-		</nav>
-	</header>
-	<div id="fullpage" class="main">
-		<div class="visual section" id="section1">
-			<div class="cell">
-				<div class="container">
-					<div class="header-text">
-						<h1>Dmytro Fitel</h1>
-						<p class="dev">Front-end developer | Lviv, Ukraine</p>
-					</div>
-				</div>
-				<div class="click">
-					<a href=".about" class="scroll-to arrow"><img src="images/arrow-text-2.png" alt="image description"></a>
-				</div>
-			</div>
-		</div>
-		<!--/visual -->
-		<section class="content">
-			<div class="about section" id="section2">
-				<div class="container">
-					<h2>About</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint, maiores nemo, dolores deleniti eaque autem nostrum doloremque quos distinctio quis, dolor accusantium optio reprehenderit sapiente voluptatibus! Ullam, ab, non!</p>
-					<p>Molestias libero, beatae. Beatae explicabo sit accusamus veniam, ratione quo, amet quod modi magni. Est rem quod, unde minima, saepe dolore nihil.</p>
-					<p>Est rem quod, unde minima, saepe dolore nihil.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint, maiores nemo, dolores deleniti eaque autem nostrum doloremque quos distinctio quis, dolor accusantium optio reprehenderit sapiente voluptatibus! Ullam, ab, non!</p>
-				</div>
-			</div><!--/about -->
-			<div class="work section" id="section3">
-				<div class="container-large">
-					<h2>Work</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					<div class="gallery-row">
-						<div class="col col-m">
-							<figure>
-								<img src="images/img-01.jpg" alt="image description">
-								<figcaption>
-									<h3>Patrimoning Network</h3>
-									<p>HTML5/CSS3/JS/JQuery + Responsive. 1 page.</p>
-									<a href="#" class="btn">View</a>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col col-s">
-							<figure>
-								<img src="images/img-02.jpg" alt="image description">
-								<figcaption>
-									<h3>Wertachpark Immobilien</h3>
-									<p>HTML5/CSS3/JS/JQuery + Responsive. 8 pages.</p>
-									<a href="#" class="btn">View</a>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col col-s">
-							<figure>
-								<img src="images/img-03.jpg" alt="image description">
-								<figcaption>
-									<h3>Lesum Laxness</h3>
-									<p>HTML5/CSS3/Bootstrap/JQuery + Responsive. 2 pages.</p>
-									<a href="#" class="btn">View</a>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col col-m">
-							<figure>
-								<img src="images/img-04.jpg" alt="image description">
-								<figcaption>
-									<h3>Dental Cremer</h3>
-									<p>HTML5/CSS3/Bootstrap/JS/JQuery + Responsive. 1 page.</p>
-									<a href="#" class="btn">View</a>
-								</figcaption>
-							</figure>
+	<div class="wrapper">
+		<header id="header">
+			<nav id="main-nav">
+				<ul class="nav">
+					<li><a href=".about" class="scroll-to" data-content="About">About</a></li>
+					<li><a href=".work" class="scroll-to" data-content="Work">Work</a></li>
+					<li><a href=".contact" class="scroll-to" data-content="Contact">Contact</a></li>
+				</ul>
+				<ul class="social">
+					<li><a href="#">
+						<svg class="icon icon-gh" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 438.549 438.549" enable-background="new 0 0 438.549 438.549">
+							<path class="icon-path" d="M409.13 114.57c-19.6-33.6-46.2-60.2-79.8-79.8-33.6-19.6-70.27-29.4-110.06-29.4-39.78 0-76.47 9.8-110.06 29.4-33.6 19.6-60.18 46.2-79.8 79.8C9.8 148.17 0 184.85 0 224.63c0 47.78 13.94 90.75 41.83 128.9 27.88 38.17 63.9 64.58 108.06 79.23 5.13.96 8.93.3 11.4-2 2.48-2.27 3.72-5.13 3.72-8.55l-.14-15.4c-.1-9.72-.15-18.2-.15-25.42l-6.56 1.14c-4.2.77-9.47 1.1-15.85 1-6.38-.1-13-.76-19.84-2-6.86-1.23-13.23-4.1-19.13-8.56-5.9-4.47-10.1-10.33-12.56-17.56l-2.87-6.57c-1.9-4.37-4.9-9.23-9-14.55-4.08-5.34-8.22-8.95-12.4-10.85l-2-1.43c-1.34-.95-2.58-2.1-3.72-3.43-1.13-1.33-2-2.67-2.56-4-.57-1.33-.1-2.43 1.43-3.3 1.52-.85 4.28-1.26 8.28-1.26l5.7.86c3.8.76 8.52 3.04 14.14 6.85 5.6 3.82 10.22 8.76 13.84 14.85 4.38 7.8 9.65 13.76 15.84 17.85 6.2 4.1 12.42 6.13 18.7 6.13 6.28 0 11.7-.47 16.28-1.42 4.56-.94 8.84-2.37 12.84-4.27 1.72-12.76 6.38-22.56 14-29.4-10.86-1.15-20.6-2.87-29.27-5.15-8.66-2.3-17.6-6-26.84-11.14-9.24-5.14-16.9-11.52-23-19.13-6.08-7.6-11.08-17.6-14.98-29.97-3.9-12.37-5.85-26.65-5.85-42.82 0-23.03 7.52-42.63 22.55-58.8-7.04-17.33-6.37-36.74 2-58.25 5.52-1.72 13.7-.43 24.56 3.85 10.85 4.28 18.8 7.95 23.84 11 5.04 3.04 9.08 5.6 12.13 7.7 17.7-4.94 35.98-7.42 54.82-7.42s37.12 2.48 54.82 7.42l10.84-6.85c7.42-4.57 16.18-8.75 26.26-12.56 10.1-3.82 17.8-4.86 23.14-3.15 8.56 21.5 9.32 40.92 2.28 58.24 15.03 16.17 22.55 35.78 22.55 58.8 0 16.2-1.95 30.5-5.85 42.97-3.9 12.48-8.94 22.46-15.12 29.98-6.2 7.52-13.9 13.85-23.13 19-9.24 5.13-18.2 8.84-26.84 11.13-8.67 2.28-18.42 4-29.27 5.14 9.9 8.56 14.84 22.08 14.84 40.54v60.24c0 3.42 1.2 6.28 3.58 8.56 2.38 2.28 6.13 2.95 11.27 2 44.17-14.66 80.2-41.07 108.07-79.23 27.88-38.16 41.83-81.13 41.83-128.9 0-39.78-9.82-76.46-29.42-110.06z" fill="#F1E8B8"/>
+						</svg></a>
+					</li>
+					<li><a href="#">
+						<svg class="icon icon-fb" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" enable-background="new 0 0 512 512">
+							<path class="icon-path" d="M296.3 512h-95.94V256h-64v-88.22l64-.03-.1-51.98C200.26 43.8 219.76 0 304.56 0h70.58v88.24h-44.1c-33.03 0-34.62 12.33-34.62 35.34l-.13 44.17h79.34l-9.35 88.22-69.94.03-.06 256z" fill="#F1E8B8"/>
+						</svg></a>
+					</li>
+					<li><a href="#">
+						<svg class="icon icon-ld" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 430.117 430.117" enable-background="new 0 0 430.117 430.117">
+							<path class="icon-path" d="M430.12 261.54v159.02h-92.2V272.2c0-37.28-13.32-62.7-46.7-62.7-25.47 0-40.63 17.13-47.3 33.7-2.43 5.94-3.05 14.2-3.05 22.5v154.86h-92.22s1.24-251.28 0-277.32h92.2v39.3c-.18.3-.42.62-.6.9h.6v-.9c12.26-18.86 34.14-45.8 83.1-45.8 60.68-.02 106.17 39.62 106.17 124.8zM52.18 9.56C20.64 9.56 0 30.26 0 57.46c0 26.62 20.04 47.94 50.96 47.94h.62c32.15 0 52.15-21.3 52.15-47.94-.6-27.2-20-47.9-51.55-47.9zm-46.7 411h92.18V143.24H5.48v277.32z" fill="#F1E8B8"/>
+						</svg>
+					</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="main">
+			<div class="visual">
+				<div class="cell">
+					<div class="container">
+						<div class="header-text">
+							<h1>Dmytro Fitel</h1>
+							<p class="dev">Front-end developer | Lviv, Ukraine</p>
 						</div>
 					</div>
-				</div><!--/work -->
+					<a href=".about" class="scroll-to arrow">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" enable-background="new 0 0 512 512">
+
+							<path d="M482.23 21.95L256 493.5 29.77 21.95l221.9 142.32 4.33 2.78 4.32-2.77 221.9-142.33M501.63 0L256 157.54 10.37 0 256 512 501.63 0z" fill="#F1E8B8"/>
+							<path d="M188.77 201.95L256 245.08l67.23-43.12L256 342.1l-67.23-140.15z" fill="#F1E8B8"/>
+						</svg>
+					</a>
+				</div>
 			</div>
-			<div class="contact section" id="section4">
-				<div class="container">	
-					<h2>Contacts</h2>
-					<div class="row">
-						<div class="col">
-							<div class="contact-form">
-								<form>
-									<label id="label-name">Name</label>
-									<input class="form-control" type="text" name='name' id='input-name' class="name" required>
-									<label id="label-phone">Phone</label>
-									<input id="phone-input" class="number form-control" type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}">
-									<label id="label-email">E-mail</label>
-									<input class="form-control" type="email" required>
-									<label id="label-msg">Message</label>
-									<textarea class="form-control" placeholder=""></textarea>
-									<input class="btn" type="submit" value="SEND">
-								</form>
+			<!--/visual -->
+			<section class="content">
+				<div class="about">
+					<div class="container">
+						<h2>About</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint, maiores nemo, dolores deleniti eaque autem nostrum doloremque quos distinctio quis, dolor accusantium optio reprehenderit sapiente voluptatibus! Ullam, ab, non!</p>
+						<p>Molestias libero, beatae. Beatae explicabo sit accusamus veniam, ratione quo, amet quod modi magni. Est rem quod, unde minima, saepe dolore nihil.</p>
+						<p>Est rem quod, unde minima, saepe dolore nihil.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint, maiores nemo, dolores deleniti eaque autem nostrum doloremque quos distinctio quis, dolor accusantium optio reprehenderit sapiente voluptatibus! Ullam, ab, non!</p>
+					</div>
+				</div><!--/about -->
+				<div class="work">
+					<div class="container-large">
+						<h2>Work</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<div class="gallery-row">
+							<div class="col col-m">
+								<figure>
+									<img src="images/img-01.jpg" alt="image description">
+									<figcaption>
+										<h3>Patrimoning Network</h3>
+										<p>HTML5/CSS3/JS/JQuery + Responsive. 1 page.</p>
+										<a href="#" class="btn">View</a>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="col col-s">
+								<figure>
+									<img src="images/img-02.jpg" alt="image description">
+									<figcaption>
+										<h3>Wertachpark Immobilien</h3>
+										<p>HTML5/CSS3/JS/JQuery + Responsive. 8 pages.</p>
+										<a href="#" class="btn">View</a>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="col col-s">
+								<figure>
+									<img src="images/img-03.jpg" alt="image description">
+									<figcaption>
+										<h3>Lesum Laxness</h3>
+										<p>HTML5/CSS3/Bootstrap/JQuery + Responsive. 2 pages.</p>
+										<a href="#" class="btn">View</a>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="col col-m">
+								<figure>
+									<img src="images/img-04.jpg" alt="image description">
+									<figcaption>
+										<h3>Dental Cremer</h3>
+										<p>HTML5/CSS3/Bootstrap/JS/JQuery + Responsive. 1 page.</p>
+										<a href="#" class="btn">View</a>
+									</figcaption>
+								</figure>
 							</div>
 						</div>
-						<div class="col">
-							<map id="map"></map>
+					</div><!--/work -->
+				</div>
+				<div class="contact">
+					<div class="container">	
+						<h2>Contacts</h2>
+						<div class="row">
+							<div class="col">
+								<div class="contact-form">
+									<form>
+										<label id="label-name">Name</label>
+										<input class="form-control" type="text" name='name' id='input-name' class="name" required>
+										<label id="label-phone">Phone</label>
+										<input id="phone-input" class="number form-control" type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}">
+										<label id="label-email">E-mail</label>
+										<input class="form-control" type="email" required>
+										<label id="label-msg">Message</label>
+										<textarea class="form-control" placeholder=""></textarea>
+										<input class="btn" type="submit" value="SEND">
+									</form>
+								</div>
+							</div>
+							<div class="col">
+								<map id="map"></map>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div><!--/contact -->
+				</div><!--/contact -->
+			</div>
+		</section>
+	</div>
+	<footer id="footer">
+		<div class="container-large">
+			<nav>
+				<ul class="footer-contact">
+					<li><a href="tel:+390939324800">+38 (093) 93 24 800</a></li>
+					<li><a href="mailto:dimfit@gmail.com">dimfit@gmail.com</a></li>
+					<li>
+						<ul class="social">
+							<li><a href="#">
+								<svg class="icon icon-gh" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 438.549 438.549" enable-background="new 0 0 438.549 438.549">
+									<path class="icon-path" d="M409.13 114.57c-19.6-33.6-46.2-60.2-79.8-79.8-33.6-19.6-70.27-29.4-110.06-29.4-39.78 0-76.47 9.8-110.06 29.4-33.6 19.6-60.18 46.2-79.8 79.8C9.8 148.17 0 184.85 0 224.63c0 47.78 13.94 90.75 41.83 128.9 27.88 38.17 63.9 64.58 108.06 79.23 5.13.96 8.93.3 11.4-2 2.48-2.27 3.72-5.13 3.72-8.55l-.14-15.4c-.1-9.72-.15-18.2-.15-25.42l-6.56 1.14c-4.2.77-9.47 1.1-15.85 1-6.38-.1-13-.76-19.84-2-6.86-1.23-13.23-4.1-19.13-8.56-5.9-4.47-10.1-10.33-12.56-17.56l-2.87-6.57c-1.9-4.37-4.9-9.23-9-14.55-4.08-5.34-8.22-8.95-12.4-10.85l-2-1.43c-1.34-.95-2.58-2.1-3.72-3.43-1.13-1.33-2-2.67-2.56-4-.57-1.33-.1-2.43 1.43-3.3 1.52-.85 4.28-1.26 8.28-1.26l5.7.86c3.8.76 8.52 3.04 14.14 6.85 5.6 3.82 10.22 8.76 13.84 14.85 4.38 7.8 9.65 13.76 15.84 17.85 6.2 4.1 12.42 6.13 18.7 6.13 6.28 0 11.7-.47 16.28-1.42 4.56-.94 8.84-2.37 12.84-4.27 1.72-12.76 6.38-22.56 14-29.4-10.86-1.15-20.6-2.87-29.27-5.15-8.66-2.3-17.6-6-26.84-11.14-9.24-5.14-16.9-11.52-23-19.13-6.08-7.6-11.08-17.6-14.98-29.97-3.9-12.37-5.85-26.65-5.85-42.82 0-23.03 7.52-42.63 22.55-58.8-7.04-17.33-6.37-36.74 2-58.25 5.52-1.72 13.7-.43 24.56 3.85 10.85 4.28 18.8 7.95 23.84 11 5.04 3.04 9.08 5.6 12.13 7.7 17.7-4.94 35.98-7.42 54.82-7.42s37.12 2.48 54.82 7.42l10.84-6.85c7.42-4.57 16.18-8.75 26.26-12.56 10.1-3.82 17.8-4.86 23.14-3.15 8.56 21.5 9.32 40.92 2.28 58.24 15.03 16.17 22.55 35.78 22.55 58.8 0 16.2-1.95 30.5-5.85 42.97-3.9 12.48-8.94 22.46-15.12 29.98-6.2 7.52-13.9 13.85-23.13 19-9.24 5.13-18.2 8.84-26.84 11.13-8.67 2.28-18.42 4-29.27 5.14 9.9 8.56 14.84 22.08 14.84 40.54v60.24c0 3.42 1.2 6.28 3.58 8.56 2.38 2.28 6.13 2.95 11.27 2 44.17-14.66 80.2-41.07 108.07-79.23 27.88-38.16 41.83-81.13 41.83-128.9 0-39.78-9.82-76.46-29.42-110.06z" fill="#F1E8B8"/>
+								</svg></a>
+							</li>
+							<li><a href="#">
+								<svg class="icon icon-fb" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" enable-background="new 0 0 512 512">
+									<path class="icon-path" d="M296.3 512h-95.94V256h-64v-88.22l64-.03-.1-51.98C200.26 43.8 219.76 0 304.56 0h70.58v88.24h-44.1c-33.03 0-34.62 12.33-34.62 35.34l-.13 44.17h79.34l-9.35 88.22-69.94.03-.06 256z" fill="#F1E8B8"/>
+								</svg></a>
+							</li>
+							<li><a href="#">
+								<svg class="icon icon-ld" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 430.117 430.117" enable-background="new 0 0 430.117 430.117">
+									<path class="icon-path" d="M430.12 261.54v159.02h-92.2V272.2c0-37.28-13.32-62.7-46.7-62.7-25.47 0-40.63 17.13-47.3 33.7-2.43 5.94-3.05 14.2-3.05 22.5v154.86h-92.22s1.24-251.28 0-277.32h92.2v39.3c-.18.3-.42.62-.6.9h.6v-.9c12.26-18.86 34.14-45.8 83.1-45.8 60.68-.02 106.17 39.62 106.17 124.8zM52.18 9.56C20.64 9.56 0 30.26 0 57.46c0 26.62 20.04 47.94 50.96 47.94h.62c32.15 0 52.15-21.3 52.15-47.94-.6-27.2-20-47.9-51.55-47.9zm-46.7 411h92.18V143.24H5.48v277.32z" fill="#F1E8B8"/>
+								</svg>
+							</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
 		</div>
-	</section>
-</div>
-	<footer id="footer"></footer>
+		<a href="#header" class="scroll-to arrow">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" enable-background="new 0 0 512 512">
+				<path d="M482.23 21.95L256 493.5 29.77 21.95l221.9 142.32 4.33 2.78 4.32-2.77 221.9-142.33M501.63 0L256 157.54 10.37 0 256 512 501.63 0z" fill="#F1E8B8"/>
+				<path d="M188.77 201.95L256 245.08l67.23-43.12L256 342.1l-67.23-140.15z" fill="#F1E8B8"/>
+			</svg>
+		</a>
+	</footer>
 </div>
 </body>
 </html>	

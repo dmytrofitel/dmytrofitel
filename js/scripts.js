@@ -41,7 +41,7 @@ $(document).scroll(function(){
 function initMap() {
 	var uluru = {lat: -25.363, lng: 131.044};
 	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 9,
+		zoom: 12,
 		center: new google.maps.LatLng(49.83826, 24.02324),
 		scrollwheel: false,
 		mapTypeControl: false,
@@ -346,8 +346,8 @@ function initMap() {
 var marker = new google.maps.Marker({
 	position: new google.maps.LatLng(49.85302327, 24.01955187),
 	icon: {
-		url: "images/greeting-man.svg",
-		scaledSize: new google.maps.Size(80,90)
+		url: "images/placeholder.svg",
+		scaledSize: new google.maps.Size(85,90)
 	},
 	map: map
 });
