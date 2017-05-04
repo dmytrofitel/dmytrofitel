@@ -12,15 +12,64 @@ $(document).ready(function(){
 		}, 1400);
 		return false;
 	});/* Scroll to */
-	// $('.bg-img').each(function() {
-	// 	$(this).css('background-image', 'url(' + $(this).find('> img').attr('src') + ')').find('> img').hide();
-	// });
-	// $('#fullpage').fullpage({
-	// 	anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-	// 	menu: '#main-nav',
-	// 	css3: true,
-	// 	scrollingSpeed: 1000
-	// });
+	$('<a href="#" class="open-menu"><span></span><span></span><span></span>Open Menu</a>').appendTo('#header');
+	$('<span class="fader"/>').appendTo('#header');
+	$('.open-menu').click(function(){
+		$('body').toggleClass('menu-opened');
+		return false;
+	});
+
+	$('.fader').click(function(){
+		$('body').removeClass('menu-opened');
+	});
+
+	/*Form*/
+	customForm.lib.domReady(function(){
+		customForm.customForms.replaceAll();
+	});
+	$('.contact-form form').validate({
+		rules: {
+			name: 'required',
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true,
+				digits: true
+			},
+			question: 'required'
+		},
+		// highlight: function(element, errorClass, validClass) {
+		// 	if (!$(element).hasClass('customForm-hidden')) {
+		// 		$(element).addClass(errorClass).removeClass(validClass);
+		// 	} else {
+		// 		$(element).siblings('.select-area').addClass(errorClass).removeClass(validClass);
+		// 	}
+		// },
+		// unhighlight: function(element, errorClass, validClass) {
+		// 	if (!$(element).hasClass('customForm-hidden')) {
+		// 		$(element).removeClass(errorClass).addClass(validClass);
+		// 	} else {
+		// 		$(element).siblings('.select-area').removeClass(errorClass).addClass(validClass);
+		// 	}
+		// },
+		submitHandler: function(form) {
+			$.ajax({
+				type: 'POST',
+				url: $(form).attr('action'),
+				data: $(form).serialize(),
+				success: function(data) {
+					alert('Thank you!');
+				},
+				error: function () {
+					alert('Something went wrong :(');
+				}
+			});
+			return false;
+		}
+	});
+
 });
 $(document).scroll(function(){
 	var scrollPos = $(this).scrollTop();
