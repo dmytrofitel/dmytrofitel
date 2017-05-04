@@ -597,6 +597,7 @@ h2 {
 	line-height: 22px;
 	letter-spacing: 4px;
 	text-transform: uppercase;
+	border-radius: 0;
 }
 .btn:hover {
 	border-color: transparent;
@@ -712,7 +713,7 @@ h2 {
 	}
 }
 @media only screen and (max-width: 991px) {
-	/*body.menu-opened{overflow: hidden;}*/
+	body.menu-opened{overflow: hidden;}
 	.wrapper{
 		-webkit-transition: all .3s;
 		-o-transition: all .3s;
