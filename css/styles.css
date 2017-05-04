@@ -926,6 +926,6 @@ screen and (orientation: portrait) and (max-width: 767px) {
 		margin: 0;
 	}
 	#footer .social li+li {
-		margin-left: 70px;
+		margin-left: 80px;
 	}
 }
