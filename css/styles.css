@@ -805,6 +805,7 @@ h2 {
 	#main-nav .social {
 		position: static;
 		transform: translateX(0);
+		bottom: initial;
 	}
 	#main-nav .social li {
 		margin-bottom: 0;
