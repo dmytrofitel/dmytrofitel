@@ -905,6 +905,10 @@ screen and (orientation: portrait) and (max-width: 767px) {
 		margin-bottom: 15px;
 	}
 	#main-nav .nav a {padding: 7px;}
+	#main-nav .nav a:before{
+		top: 7px;
+		bottom: 0;
+	}
 	#main-nav .social li{
 		margin-bottom: 20px;
 	}
