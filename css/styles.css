@@ -252,6 +252,9 @@ select:focus {
 	-webkit-transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 900ms;
 	transition: clip cubic-bezier(0.25, 0.46, 0.45, 0.94) 900ms;
 }
+#main-nav .social-holder {
+	position: relative;
+}
 #main-nav .social {
 	position: absolute;
 	bottom: 0;
@@ -261,15 +264,15 @@ select:focus {
 #main-nav .social li {
 	margin: 0 0 50px;
 }
+#main-nav .social li a {
+	display: block;
+}
 #main-nav .social img {
 	width: 30px;
 	height: auto;
-	display: inline-block;
-	vertical-align: middle;
 	-webkit-transition: all .3s;
 	-o-transition: all .3s;
 	transition: all .3s;
-	color: #000;
 }
 .open-menu {display: none;}
 /* Visual */
@@ -724,7 +727,7 @@ h2 {
 		-o-transition: all .3s;
 		transition: all .3s;
 	}
-	.menu-opened .wrapper{margin: 0 -250px 0 230px;}
+	.menu-opened .wrapper{margin: 0 -200px 0 180px;}
 	.open-menu{
 		display: block;
 		font-size: 0;
@@ -780,9 +783,9 @@ h2 {
 		position: fixed;
 		top: 0;
 		left: inherit;
-		left: -266px;
+		left: -200px;
 		bottom: 0;
-		width: 265px;
+		width: 200px;
 		margin: 0;
 		z-index: 99999;
 		padding-top: 75px;

@@ -18,11 +18,9 @@ $(document).ready(function(){
 		$('body').toggleClass('menu-opened');
 		return false;
 	});
-
 	$('.fader').click(function(){
 		$('body').removeClass('menu-opened');
 	});
-
 	/*Form*/
 	customForm.lib.domReady(function(){
 		customForm.customForms.replaceAll();
