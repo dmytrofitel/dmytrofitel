@@ -802,6 +802,10 @@ h2 {
 	.menu-opened #main-nav {
 		left: 0;
 	}
+	#main-nav .social {
+		position: static;
+		transform: translateX(0);
+	}
 	#main-nav .social li {
 		margin-bottom: 0;
 		display: inline-block;
@@ -913,11 +917,6 @@ screen and (orientation: portrait) and (max-width: 767px) {
 	#main-nav .nav a:before{
 		top: 7px;
 		bottom: 0;
-	}
-	#main-nav .social {
-		left: 50%;
-		top: 230px;
-		width: 100%;
 	}
 }
 @media screen and (max-width: 480px) {
