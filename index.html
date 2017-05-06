@@ -125,16 +125,16 @@
 							<div class="row">
 								<div class="col">
 									<div class="contact-form">
-										<form action="send-form.php">
+										<form action="https://formspree.io/dimfit@gmail.com" method="POST">
 											<label id="label-name">Name</label>
-											<input class="name form-control" type="text" name='name' id='input-name' required>
-											<label id="label-phone">Phone</label>
-											<input id="phone-input" class="number form-control" type="tel" name="phone" pattern="2[0-9]{3}-[0-9]{3}">
+											<input class="name form-control" type="text" required="required" id="name">
 											<label id="label-email">E-mail</label>
-											<input class="form-control" type="email" name="email" required>
+											<input class="form-control" type="email" name="email" required="required" id="email">
+											<label id="label-phone">Subject</label>
+											<input required="required" id="subject" class="number form-control" type="text" name="subject">
 											<label id="label-msg">Message</label>
-											<textarea class="form-control" placeholder=""></textarea>
-											<input class="btn" type="submit" value="SEND">
+											<textarea name="message" id="message" required="required" class="form-control"></textarea>
+											<input class="btn" id="send" type="submit" value="SEND">
 										</form>
 									</div>
 								</div>
