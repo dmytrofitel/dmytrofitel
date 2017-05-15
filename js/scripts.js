@@ -399,7 +399,6 @@ var marker = new google.maps.Marker({
 	map: map
 });
 }
-
 $(function(){
 	$('#send').click(function(e){
 		e.preventDefault();
