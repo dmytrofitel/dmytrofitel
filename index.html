@@ -135,16 +135,17 @@
 								<div class="col">
 									<div class="contact-form">
 										<form action="https://formspree.io/dimfit@gmail.com" method="POST">
-											<label id="label-name">Name</label>
+											<label id="label-name">* Name</label>
 											<input class="name form-control" type="text" required="required" id="name">
-											<label id="label-email">E-mail</label>
+											<label id="label-email">* E-mail</label>
 											<input class="form-control" type="email" name="email" required="required" id="email">
 											<label id="label-phone">Subject</label>
-											<input required="required" id="subject" class="number form-control" type="text" name="subject">
-											<label id="label-msg">Message</label>
+											<input id="subject" class="number form-control" type="text" name="subject">
+											<label id="label-msg">* Message</label>
 											<textarea name="message" id="message" required="required" class="form-control"></textarea>
 											<input class="btn" id="send" type="submit" value="SEND">
 										</form>
+										<small>* - Required field.</small>
 									</div>
 								</div>
 								<div class="col">
