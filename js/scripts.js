@@ -414,7 +414,7 @@ $(function(){
 			},
 			dataType: "json"
 		}).done(function(){
-			$('#form').html('<h2>Thank you for getting in touch!</h2><h4>We appreciate you contacting us about. We try to respond as soon as possible. Have a great day ahead!</h4>');
+			$('.contact-form').html('<h2>Thank you for getting in touch!</h2><h4>I will respond as soon as possible. Have a great day!</h4>');
 		});
 	});
 });
