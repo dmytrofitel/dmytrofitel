@@ -468,10 +468,8 @@ h1 {
 .about:after {
 	position: absolute;
 	content: '';
-	top: 50%;
+	bottom: 140px;
 	right: 100px;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
 	background: url(../images/responsive-design-01.png) 0 0 no-repeat;
 	-webkit-background-size: 100%;
 	background-size: 100%;
@@ -490,6 +488,9 @@ h2 {
 	text-align: center;
 	margin: 0 0 60px;
 	color: #fff;
+}
+.about-story {
+	margin: 0 0 60px;
 }
 .about h3 {margin: 0 0 30px;
 	text-transform: uppercase;
@@ -517,6 +518,16 @@ h2 {
 	height: 20px;
 	width: 100%;
 	max-width: 20px;
+}
+.about a {
+	color: #F9E784;
+	text-decoration: underline;
+}
+.about span {
+	color: #F9E784;
+}
+.txt-right {
+	text-align: right;
 }
 /* Work */
 .work {
