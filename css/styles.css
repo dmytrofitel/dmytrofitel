@@ -618,6 +618,9 @@ h2 {
 }
 .contact-form textarea {
 	resize: none;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
 }
 .form-control {
 	display: block;
