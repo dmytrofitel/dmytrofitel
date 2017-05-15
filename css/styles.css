@@ -468,7 +468,7 @@ h1 {
 .about:after {
 	position: absolute;
 	content: '';
-	bottom: 140px;
+	bottom: 220px;
 	right: 100px;
 	background: url(../images/responsive-design-01.png) 0 0 no-repeat;
 	-webkit-background-size: 100%;
@@ -787,6 +787,10 @@ h2 {
 	#footer .arrow {
 		margin-right: 30px;
 	}
+	.about:after {
+		right: 65px;
+		max-width: 400px;
+	}
 }
 @media only screen and (max-width: 991px) {
 	body.menu-opened{overflow: hidden;}
@@ -803,10 +807,15 @@ h2 {
 		width: 30px;
 		padding: 0;
 		position: fixed;
-		top: 40px;
-		left: 30px;
-		margin-top: -10px;
+		top: 30px;
+		right: 30px;
+		margin: 0;
+		padding: 10px 5px;
+		width: 40px;
+		height: 42px;
 		z-index: 999999999;
+		background: rgba(255,255,255,0.2);
+		border-radius: 2px;
 	}
 	.menu-opened .open-menu {
 		position: fixed;
@@ -825,10 +834,10 @@ h2 {
 	}
 	.open-menu span+span{margin-top: 6px;}
 	.menu-opened .open-menu span:nth-child(1){
-		-webkit-transform: rotate(45deg) translate(-1px,0);
-		-ms-transform: rotate(45deg) translate(-1px,0);
-		-o-transform: rotate(45deg) translate(-1px,0);
-		transform: rotate(45deg) translate(-1px,0);
+		-webkit-transform: rotate(45deg) translate(4px,-4px);
+		-ms-transform: rotate(45deg) translate(4px,-4px);
+		-o-transform: rotate(45deg) translate(4px,-4px);
+		transform: rotate(45deg) translate(4px,-4px);
 		-webkit-transform-origin: 0 0;
 		-moz-transform-origin: 0 0;
 		-ms-transform-origin: 0 0;
@@ -837,10 +846,10 @@ h2 {
 	}
 	.menu-opened .open-menu span:nth-child(2){opacity: 0;}
 	.menu-opened .open-menu span:nth-child(3){
-		-webkit-transform: rotate(-45deg) translate(-2px,0);
-		-ms-transform: rotate(-45deg) translate(-2px,0);
-		-o-transform: rotate(-45deg) translate(-2px,0);
-		transform: rotate(-45deg) translate(-2px,0);
+		-webkit-transform: rotate(-45deg) translate2px,5px);
+		-ms-transform: rotate(-45deg) translate(2px,5px);
+		-o-transform: rotate(-45deg) translate(2px,5px);
+		transform: rotate(-45deg) translate(2px,5px);
 		-webkit-transform-origin: 0 100%;
 		-moz-transform-origin: 0 100%;
 		-ms-transform-origin: 0 100%;
@@ -926,6 +935,11 @@ h2 {
 	.arrow {
 		bottom: 30px;
 	}
+	.about:after {
+		bottom: 140px;
+		right: 50px;
+		max-width: 300px;
+	}
 }
 @media screen and (max-width: 767px),
 screen and (orientation: landscape) and (max-width: 767px),
@@ -949,10 +963,19 @@ screen and (orientation: portrait) and (max-width: 767px) {
 	.about, .work, .contact {
 		padding: 30px 0;
 	}
+	.about:after {
+		bottom: 90px;
+		right: 50px;
+		max-width: 200px;
+	}
 	h2 {
 		font-size: 22px;
 		line-height: 26px;
-		margin-bottom: 30px;
+		margin-bottom: 15px;
+	}
+	.about h3 {
+		font-size: 16px;
+		line-height: 26px;
 	}
 	.work .col {
 		padding: 0;
@@ -963,6 +986,9 @@ screen and (orientation: portrait) and (max-width: 767px) {
 		opacity: 1;
 		font-size: 14px;
 		line-height: 18px;
+	}
+	.work p {
+		margin: 0 0 30px;
 	}
 	.contact-form {
 		font-size: 18px;
@@ -993,6 +1019,13 @@ screen and (orientation: portrait) and (max-width: 767px) {
 	}
 }
 @media screen and (max-width: 480px) {
+	.about {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.about:after {
+		display: none;
+	}
 	.work figure {
 		height: 250px;
 	}
