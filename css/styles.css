@@ -611,6 +611,9 @@ h2 {
 	text-transform: uppercase;
 	margin: 0 0 15px;
 }
+.work .btn {
+	margin: 0 auto;
+}
 /* Contact */
 .contact-form {
 	font-size: 22px;
